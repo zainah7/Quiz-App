@@ -1,0 +1,65 @@
+const islamicQuizQuestions = [
+  {
+    question: "What is the holy book of Islam?",
+    options: ["Quran", "Bible", "Torah", "Gita"],
+    correctAnswer: "Quran",
+  },
+  {
+    question: "Who is the last prophet in Islam?",
+    options: ["Adam", "Moses", "Jesus", "Muhammad"],
+    correctAnswer: "Muhammad",
+  },
+  {
+    question: "What is the first month of the Islamic calendar?",
+    options: ["Ramadan", "Shawwal", "Muharram", "Safar"],
+    correctAnswer: "Muharram",
+  },
+  {
+    question: "What is the pilgrimage to Mecca called?",
+    options: ["Eid", "Hajj", "Umrah", "Zakat"],
+    correctAnswer: "Hajj",
+  },
+  {
+    question: "How many pillars of Islam are there?",
+    options: ["3", "4", "5", "6"],
+    correctAnswer: "5",
+  },
+  {
+    question: "What is the name of the night journey of the Prophet Muhammad?",
+    options: ["Mi'raj", "Isra", "Hijrah", "Hajj"],
+    correctAnswer: "Isra",
+  },
+  {
+    question: "What is the Islamic declaration of faith?",
+    options: ["Salat", "Sawm", "Shahada", "Zakat"],
+    correctAnswer: "Shahada",
+  },
+  {
+    question: "In which direction do Muslims pray?",
+    options: ["North", "South", "East", "West"],
+    correctAnswer: "East",
+  },
+  {
+    question: "What is the holy month of fasting in Islam?",
+    options: ["Shawwal", "Dhu al-Hijjah", "Rabi' al-Thani", "Ramadan"],
+    correctAnswer: "Ramadan",
+  },
+  {
+    question: "What is the significance of the Kaaba in Mecca?",
+    options: [
+      "Muslim political center",
+      "Muslim economic center",
+      "Muslim spiritual center",
+      "Muslim educational center",
+    ],
+    correctAnswer: "Muslim spiritual center",
+  },
+];
+
+// Accessing a random question from the array
+const randomQuestion =
+  islamicQuizQuestions[Math.floor(Math.random() * islamicQuizQuestions.length)];
+
+console.log("Question: " + randomQuestion.question);
+console.log("Options: " + randomQuestion.options.join(", "));
+console.log("Correct Answer: " + randomQuestion.correctAnswer);
